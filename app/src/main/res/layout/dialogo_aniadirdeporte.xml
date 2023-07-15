@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_nombr_text"
+        android:hint="Introduzca nombre del deporte:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_nombreDto"
+        android:layout_below="@id/dialog_nombr_text"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_ctdad_text"
+        android:layout_below="@id/dialog_nombreDto"
+        android:hint="Cantidad de jugadores:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_ctdad"
+        android:layout_below="@id/dialog_ctdad_text"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_ctdadEq_text"
+        android:layout_below="@id/dialog_ctdad"
+        android:hint="Cantidad de jugadores por equipo:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_ctdadEq"
+        android:layout_below="@id/dialog_ctdadEq_text"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_desc_text"
+        android:layout_below="@id/dialog_ctdadEq"
+        android:hint="Descripccion del deporte:"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_desc"
+        android:layout_below="@id/dialog_desc_text"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"/>
+
+
+
+
+</RelativeLayout>

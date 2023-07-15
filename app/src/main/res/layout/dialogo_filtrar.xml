@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_filtrar_text"
+        android:hint="Seleccione el deporte:"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filtrar_deporte"
+        android:hint="Usuario"
+        android:layout_below="@+id/dialog_filtrar_text"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filtrar_deporte"
+        android:id="@+id/dialog_filtrar_fI_text"
+        android:hint="Desde:"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/datoFiltrarfInicio"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha inicio"
+        android:textColor="@color/black"
+        android:layout_below="@+id/dialog_filtrar_fI_text"
+        android:drawableRight="@drawable/baseline_calendar_month_24"
+        android:drawablePadding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datoFiltrarfInicio"
+        android:id="@+id/datoFiltrarTfInicio"
+        android:hint="Hasta:"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/datoPFiltrarfFin"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha fin"
+        android:textColor="@color/black"
+        android:layout_below="@+id/datoFiltrarTfInicio"
+        android:drawableRight="@drawable/baseline_calendar_month_24"
+        android:drawablePadding="8dp"/>
+
+
+
+</RelativeLayout>

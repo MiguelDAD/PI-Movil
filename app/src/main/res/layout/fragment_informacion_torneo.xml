@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".InformacionTorneoFragment">
+
+    <!-- TODO: PROBAR A QUITAR EL THEME
+     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="@color/lavender"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:contentDescription="Ventana para cambiar datos"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:contentDescription="Boton para cambiar datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"/>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/constraintRondaTorneo"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".DatosTorneoRondasFragment">
+
+
+    <com.ventura.bracketslib.BracketsView
+        android:id="@+id/bracket_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bracketBackgroundColor="@color/snow"
+        app:bracketColor="@color/lavender"
+        app:bracketTextColor="@color/white"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
